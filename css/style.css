@@ -1,16 +1,55 @@
 body, html {
     height: 100%;
     margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 .bg{
 	/* The image used */
-    background-image: url("../img/osman-rana-193635.jpg");
+    background-image: url("../img/clint-adair-68588.jpg");
 
     /* Full height */
-    height: 35%; 
+    height: 40%; 
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.profile_img {
+	width: 28vh;
+	border-radius: 50%;
+	padding: 1em;
+}
+h4,h5,h6{
+	margin: 0;
+}
+.nav-wrapper {
+	padding-left: 50px;
+}
+main {
+    flex: 1 0 auto;
+    
+  }
+.page-footer{
+	padding: 0px;
+	box-shadow: 1px -1px 3px  #888888;
+}
+.card-content{
+	display: block;
+}
+#image{
+    opacity: 0;
+}
+.tabs .indicator{
+    background-color: #2E7D1C;
+}
+.carousel .carousel-item{
+    width: 100%;
+    top: 15px;
+    left:15px;
+    max-height: 300px;
 }
