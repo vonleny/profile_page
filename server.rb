@@ -1,4 +1,4 @@
 require 'sinatra'
 get '/' do
-	erd:index
+	File.read(File.join('public', 'index.html'))
 end
