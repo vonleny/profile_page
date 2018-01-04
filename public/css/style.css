@@ -23,6 +23,8 @@ body, html {
 	width: 28vh;
 	border-radius: 50%;
 	padding: 1em;
+    animation-name: appear;
+    animation-duration: 2s;
 }
 h4,h5,h6{
 	margin: 0;
@@ -52,4 +54,51 @@ main {
 }
 .comic{
     padding: 30px;
+}
+.white-text1{
+    color:#fff;
+    animation-name:moveInRight;
+    animation-duration: 2s;
+}
+.white-text{
+    color:#fff;
+    animation-name:moveInLeft;
+    animation-duration: 2s;
+}
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);      
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(100px);       
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes appear{
+    0% {
+        opacity: 0;
+             
+    }
+    
+    100% {
+        opacity: 1;
+        
+    }
 }
